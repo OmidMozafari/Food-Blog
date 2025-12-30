@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Karma", sans-serif;
+}
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+}
+nav{
+ padding: 16px 0;
+ text-align: center;
+ margin: 0 ;
+ max-width: 1200px;
+ margin: auto;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+nav ul li{
+    list-style-type: none;
+    padding: 0;
+    text-transform: capitalize;
+}
+#nav-icon i {
+    display: inline-block;    
+    padding: 8px 16px;            
+}
+#nav-icon i:hover {
+    background-color: rgb(187, 182, 182);
+    cursor: pointer;
+}
+nav ul li h4{
+    font-weight: 400;
+}

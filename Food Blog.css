@@ -48,7 +48,179 @@ nav ul li h4{
 
 /* main part styles */
 
+/* this is the overall container after and functions after the header and nav */
 
+.container{
+    max-width: 1200px;
+    margin: 0 70px 0;
+    /* padding: 8px 16px; */
+}
+/* this is the overall container after and functions after the header and nav */
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* the first sections styles of main */
+#first-main-section{
+    display: flex;
+    margin-top: 100px;
+    padding:16px 8px;
+}
+.first-section-item-containers{
+    width: 100%;
+    padding: 0 8px;
+}
+.first-section-item-containers img{
+    width: 100%;
+}
+.first-section-item-containers h3{
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.5;
+    margin: 10px 0;
+    font-weight: 400;
+}
+.first-section-item-containers p{
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 15px 0;
+    text-align: center;
+}
+/* the first section styles of main */
+
+/* the second section styles of main */
+
+#second-main-section{
+    display: flex;
+    padding: 16px 8px;
+}
+.second-section-item-containers{
+    width: 100%;
+    padding: 0 8px;
+}
+.second-section-item-containers img{
+    width: 100%;
+}
+.second-section-item-containers h3{
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.5;
+    margin: 10px 0;
+    font-weight: 400;
+}
+.second-section-item-containers p{
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 15px 0;
+    text-align: center;
+}
+
+/* the second section styles of main */
+
+/* the third section styles of main */
+
+#third-main-section{
+    padding: 32px 0;
+    text-align: center;
+}
+.third-section-items{
+    padding: 8px 16px;
+    vertical-align: middle;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+.third-section-items:hover{
+    background-color: black;
+    color: white;
+}
+.third-section-item-containers :nth-child(2){
+    background-color: black;
+    color: white;
+}
+.third-section-item-containers :nth-child(2):hover{
+    color: black;
+    background-color: rgb(207, 205, 205);
+}
+/* the third section styles of main */
+
+/* horizontal line design styles */
+hr{
+    margin: 20px 0;
+    border: 1px solid #eee;
+}
+   
+/* horizontal line design styles */
+
+/* fourth section of main */
+#fourth-main-section{
+    text-align: center;
+    padding: 32px 16px;
+}
+#fourth-main-section h3{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 24px;
+}
+.fourth-section-text-container{
+    padding: 32px 0;
+}
+.fourth-section-text-container h4{
+    margin: 10px 0;
+    font-size: 20px;
+}
+.fourth-section-text-container h6{
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.fourth-section-text-container p{
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+/* fourth section of main */
 
 /* main part styles */
 
+/* footer part styles */
+footer{
+    padding: 32px 8px;
+    display: flex;
+}
+.footer-containers{
+    padding: 0 8px;
+    width: 33.3%;
+}
+.footer-containers h3{
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.footer-containers p{
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+.footer-containers p > a{
+    text-decoration: none;
+    color: black;
+}
+.footer-containers ul li{
+    padding: 16px;
+    list-style-type: none;
+    display: flex;
+}
+.footer-containers ul li img{
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+}
+.footer-containers ul :nth-child(1){
+    border-bottom: 1px solid #ddd;
+}
+/* footer part styles */

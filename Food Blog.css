@@ -7,19 +7,26 @@
 body{
     font-family: "Karma", sans-serif;
 }
+.container{
+    max-width: 1200px;
+    margin:auto;
+    padding: 0 32px 8px;
+    /* padding: 8px 16px; */
+}
 header{
     width: 100%;
     position: sticky;
     top: 0;
-    z-index: 1;
     text-align: center;
+    background-color: #fff;
+    max-width: 1200px;
+    /* margin: 0 75px; */
 }
 nav{
  padding: 16px 0;
  text-align: center;
- margin: 0 ;
- max-width: 1200px;
- margin: auto;
+ height: 90px;
+
 }
 
 nav ul{
@@ -32,13 +39,16 @@ nav ul li{
     padding: 0;
     text-transform: capitalize;
 }
-#nav-icon i {
-    display: inline-block;    
-    padding: 8px 16px;            
+
+#nav-icon{
+    padding: 8px 16px;
 }
-#nav-icon i:hover {
+#nav-icon i {
+    font-size: 18px;       
+}
+#nav-icon:hover {
     background-color: rgb(187, 182, 182);
-    cursor: pointer;
+    cursor: pointer;  
 }
 nav ul li h4{
     font-weight: 400;
@@ -48,24 +58,15 @@ nav ul li h4{
 
 /* main part styles */
 
-/* this is the overall container after and functions after the header and nav */
-
-.container{
-    max-width: 1200px;
-    margin: 0 70px 0;
-    /* padding: 8px 16px; */
-}
-/* this is the overall container after and functions after the header and nav */
-
 main{
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 /* the first sections styles of main */
 #first-main-section{
     display: flex;
-    margin-top: 100px;
     padding:16px 8px;
 }
 .first-section-item-containers{
@@ -132,6 +133,9 @@ main{
     text-decoration: none;
     color: black;
 }
+.third-section-items i {
+    font-size: 9px !important; /* Forcefully apply the font size */
+}
 .third-section-items:hover{
     background-color: black;
     color: white;
@@ -164,8 +168,15 @@ hr{
     font-weight: 400;
     font-size: 24px;
 }
+.fourth-section-img-container{
+    width: 100%;
+}
+.fourth-section-img-container img{
+    width: 100%;
+}
 .fourth-section-text-container{
     padding: 32px 0;
+    width: 100%;
 }
 .fourth-section-text-container h4{
     margin: 10px 0;
@@ -210,17 +221,58 @@ footer{
     text-decoration: none;
     color: black;
 }
+
+/* footer second section */
 .footer-containers ul li{
     padding: 16px;
     list-style-type: none;
     display: flex;
+}
+.footer-containers ul li:hover{
+background-color: rgb(214, 206, 206);
 }
 .footer-containers ul li img{
     width: 50px;
     height: 50px;
     margin-right: 16px;
 }
-.footer-containers ul :nth-child(1){
+.footer-containers ul li span{
+    display: inline-block;
+}
+#first-li-of-blog-post-of-footer{
     border-bottom: 1px solid #ddd;
 }
+/* footer second section */
+
+/* footer third container */
+.popular-tags-span-container{
+    margin: 15px 0;
+}
+.popular-tags-span-container :nth-child(1){
+    padding: 0 8px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+    display: inline-block;
+
+}
+.popular-tags-span-items{
+    padding: 0 8px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #616161;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+    display: inline-block;
+   justify-content: center;
+   align-items: center;
+}
+
+
+/* footer third container */
+
 /* footer part styles */

@@ -10,23 +10,21 @@ body{
 .container{
     max-width: 1200px;
     margin:auto;
-    padding: 0 32px 8px;
+   padding: 0 16px 8px; 
     /* padding: 8px 16px; */
 }
 header{
     width: 100%;
     position: sticky;
     top: 0;
-    text-align: center;
     background-color: #fff;
     max-width: 1200px;
-    /* margin: 0 75px; */
+    margin: auto;
 }
 nav{
  padding: 16px 0;
  text-align: center;
  height: 90px;
-
 }
 
 nav ul{
@@ -164,12 +162,14 @@ hr{
     padding: 32px 16px;
 }
 #fourth-main-section h3{
-    margin: 10px 0;
+    margin: 10px 0 30px;
     font-weight: 400;
     font-size: 24px;
 }
 .fourth-section-img-container{
-    width: 100%;
+    max-width: 100%;
+    width: 800px;
+    margin: auto;
 }
 .fourth-section-img-container img{
     width: 100%;
@@ -218,8 +218,8 @@ footer{
     margin: 15px 0;
 }
 .footer-containers p > a{
-    text-decoration: none;
     color: black;
+
 }
 
 /* footer second section */
@@ -248,29 +248,45 @@ background-color: rgb(214, 206, 206);
 .popular-tags-span-container{
     margin: 15px 0;
 }
-.popular-tags-span-container :nth-child(1){
-    padding: 0 8px;
-    font-size: 15px;
-    color: #fff;
-    background-color: #000;
-    text-align: center;
-    text-transform: capitalize;
-    margin-bottom: 16px;
-    display: inline-block;
-
-}
-.popular-tags-span-items{
+.popular-tags-span-items {
+    display: inline-flex;
+    align-items: center;      /* vertical center */
+    justify-content: center;  /* horizontal center */
     padding: 0 8px;
     font-size: 12px;
     color: #fff;
     background-color: #616161;
-    text-align: center;
     text-transform: capitalize;
     margin-bottom: 16px;
-    display: inline-block;
-   justify-content: center;
-   align-items: center;
 }
+.popular-tags-span-container :nth-child(1) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #000;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+
+/* media query part */
+@media (min-width:500px) and (max-width:600px){
+    #first-main-section, #second-main-section{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .footer-containers{
+        width: 100%;
+    }
+
+}
+/* media query part */
+
+
 
 
 /* footer third container */
